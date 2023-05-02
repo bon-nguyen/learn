@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="city-count" class="text-6xl font-extrabold text-white mb-6">
+      98
+    </div>
+
+    <script>
+      const animationNumber = (
+        finalNumber,
+        duration = 5000,
+        startNumber = 0,
+        callback
+      ) => {
+        const startTime = performance.now();
+        console.log("startTime", startTime);
+
+        const updateNumber = (currentTime) => {
+          const elapsedTime = currentTime - startTime;
+
+          if (elapsedTime > duration) {
+            callback(finalNumber);
+            console.log("Call 1");
+          } else {
+            console.log("Call 2");
+            const rate = elapsedTime / duration;
+            console.log("rate", rate);
+            const currentNumber = Math.round(rate * finalNumber);
+            callback(currentNumber);
+            requestAnimationFrame(updateNumber);
+          }
+        };
+
+        requestAnimationFrame(updateNumber);
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        animationNumber(98, 3000, 0, (number) => {
+          const formattedNumber = number.toLocaleString();
+          document.getElementById("city-count").innerText = formattedNumber;
+        });
+      });
+    </script>
+  </body>
+</html>
