@@ -1,0 +1,12 @@
+.item {
+  background: red;
+}
+.item-content {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item .item-title {
+  color: red;
+}/*# sourceMappingURL=styles.css.map */

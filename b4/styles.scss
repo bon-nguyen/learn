@@ -1,0 +1,13 @@
+.item {
+  background: red;
+  &-content {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item-title {
+    color: red;
+  }
+}

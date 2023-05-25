@@ -26,12 +26,11 @@
 
           if (elapsedTime > duration) {
             callback(finalNumber);
-            console.log("Call 1");
           } else {
-            console.log("Call 2");
             const rate = elapsedTime / duration;
             console.log("rate", rate);
             const currentNumber = Math.round(rate * finalNumber);
+            console.log("currentNumber", currentNumber);
             callback(currentNumber);
             requestAnimationFrame(updateNumber);
           }
