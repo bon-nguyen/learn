@@ -1,0 +1,136 @@
+/* GLOBAl CSS*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section {
+  padding: 0 1rem;
+}
+
+.header-mobile {
+  position: relative;
+  height: 60px;
+  padding: 6px 0px;
+}
+
+.header-mobile__wrap {
+  display: flex;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-desktop {
+  display: none;
+  height: 80px;
+}
+
+.icon-toggle {
+  border: none;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-bar {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.side-bar.active {
+  display: block;
+}
+
+.side-bar__wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-width: 300px;
+  width: 100%;
+  height: 100vh;
+  background: #e9e9e9;
+  z-index: 100;
+  padding: 1.25rem;
+}
+
+.side-bar__mask {
+  /* position: fixed;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh; */
+  background: rgb(0 0 0 / 20%);
+  width: 100%;
+  height: 100%;
+  /* top: 0;
+  left: 0; */
+}
+
+.side-bar__close {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.side-bar__menu {
+  list-style: none;
+}
+
+.side-bar__menu li {
+  padding: 0.25rem 0rem;
+}
+
+.side-bar__menu li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.side-bar__icon {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.side-bar__icon a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* MAX WIDTH */
+@media (min-width: 768px) {
+  .header-mobile {
+    display: none;
+  }
+  .header-desktop {
+    display: block;
+  }
+}
+
+/* MIN-WIDTH */
+
+@media (max-width: 769px) {
+}
+
+@media screen and (max-width: 768px) {
+  .boxsale {
+    width: calc(50% - 20px);
+  }
+}

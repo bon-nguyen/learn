@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+.row {
+  float: left;
+  width: 100%;
+}
+
+.mrt {
+  margin-top: 10px;
+}
+
+header {
+  background-color: #fff;
+  /* height: 80px; */
+}
+.logo {
+  width: 15%;
+  float: left;
+}
+
+.logo img {
+  width: 100%;
+  padding: 11px 0;
+}
+
+.menu {
+  width: 60%;
+  float: left;
+}
+.icons {
+  width: 20%;
+  float: right;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  line-height: 80px;
+  padding: 0 10px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icons {
+  text-align: right;
+  font-size: 24px;
+  padding: 26px 0;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #000;
+}
+
+.boxsale {
+  width: calc(25% - 20px);
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px 0px;
+  float: left;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.boxspbc {
+  width: calc(33.33% - 20px);
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px 0px;
+  float: left;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.saleimg img,
+.spbcimg img {
+  width: 100%;
+  transition: 0.7s;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.boxsale button,
+.boxspbc button {
+  padding: 10px 20px;
+  background-color: red;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+}
+.boxsale a,
+.boxspbc a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.boxtintuc {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 10px 0px;
+  float: left;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.tintucimg img {
+  width: 100%;
+  float: left;
+}
